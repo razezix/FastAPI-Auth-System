@@ -93,6 +93,7 @@ No database tables are required for business objects — only authorization logi
 ```bash
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
 # 🚀 FastAPI система аутентификации и авторизации
 
