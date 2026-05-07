@@ -2,7 +2,7 @@
 
 A comprehensive authentication and authorization system built with FastAPI, featuring JWT-based authentication, role-based access control (RBAC), and PostgreSQL database integration.
 
-## 📋 Features
+## Features
 
 - **User Authentication**: Register, login, and manage user accounts with secure password hashing using bcrypt
 - **JWT Tokens**: JSON Web Token-based authentication with access and refresh tokens
@@ -12,7 +12,7 @@ A comprehensive authentication and authorization system built with FastAPI, feat
 - **Middleware Authentication**: Custom authentication middleware for request validation
 - **Demo Data**: Pre-seeded test data for easy testing
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: FastAPI 0.110+
 - **Server**: Uvicorn 0.27+
@@ -21,7 +21,7 @@ A comprehensive authentication and authorization system built with FastAPI, feat
 - **Validation**: Pydantic 2.6+ and Pydantic-Settings 2.2+
 - **Email**: Email-validator 2.0+
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 app/
@@ -48,7 +48,7 @@ app/
 └── requirements.txt   # Project dependencies
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -93,7 +93,7 @@ The API will be available at `http://localhost:8000`
 - API Documentation: `http://localhost:8000/docs` (Swagger UI)
 - Alternative Documentation: `http://localhost:8000/redoc` (ReDoc)
 
-## 🔐 Authentication Flow
+## Authentication Flow
 
 1. User registers with email and password
 2. Password is hashed using bcrypt
@@ -103,7 +103,7 @@ The API will be available at `http://localhost:8000`
 6. Middleware validates token on each request
 7. User can access protected endpoints based on their role
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Authentication (Accounts)
 - `POST /register` - Register new user
@@ -119,7 +119,7 @@ The API will be available at `http://localhost:8000`
 ### Business Logic
 - Protected endpoints for authenticated users with specific roles
 
-## 🔑 Key Components
+## Key Components
 
 ### Authentication Middleware
 Custom middleware that validates JWT tokens on each request and attaches user information to the request context.
@@ -136,7 +136,7 @@ Flexible permission system allowing:
 - Request middleware for automatic authentication
 - Role and permission-based authorization
 
-## 📝 Example Usage
+## Example Usage
 
 ```python
 # Login
@@ -149,19 +149,13 @@ curl -X GET "http://localhost:8000/me" \
   -H "Authorization: Bearer <your_token>"
 ```
 
-## 🧪 Testing
+## Testing
 
 The application comes pre-seeded with test data. Check `app/access/seed.py` for default users and roles.
 
-## 📄 License
+## License
 
 This project is provided as-is for educational and development purposes.
-
----
-
-## Description
-
-A production-ready FastAPI authentication and authorization system featuring JWT-based user authentication, role-based access control with granular permissions, PostgreSQL database integration, secure password handling with bcrypt, and a clean API design with comprehensive endpoint documentation. Ideal for securing FastAPI applications with flexible permission management.
 
 ---
 
@@ -169,7 +163,7 @@ A production-ready FastAPI authentication and authorization system featuring JWT
 
 Полнофункциональная система аутентификации и авторизации, разработанная на FastAPI с поддержкой JWT-токенов, управления доступом на основе ролей (RBAC) и интеграцией с PostgreSQL.
 
-## 📋 Возможности
+## Возможности
 
 - **Аутентификация пользователей**: Регистрация, вход и управление учетными записями с безопасным хешированием паролей через bcrypt
 - **JWT токены**: Аутентификация на основе JSON Web Token с токенами доступа и обновления
@@ -179,7 +173,7 @@ A production-ready FastAPI authentication and authorization system featuring JWT
 - **Middleware аутентификации**: Пользовательское middleware для валидации запросов
 - **Демо-данные**: Предзагруженные тестовые данные для удобного тестирования
 
-## 🛠️ Технологический стек
+## Технологический стек
 
 - **Framework**: FastAPI 0.110+
 - **Сервер**: Uvicorn 0.27+
@@ -188,7 +182,7 @@ A production-ready FastAPI authentication and authorization system featuring JWT
 - **Валидация**: Pydantic 2.6+ и Pydantic-Settings 2.2+
 - **Email**: Email-validator 2.0+
 
-## 📁 Структура проекта
+## Структура проекта
 
 ```
 app/
@@ -215,7 +209,7 @@ app/
 └── requirements.txt   # Зависимости проекта
 ```
 
-## 🚀 Начало работы
+## Начало работы
 
 ### Предварительные требования
 
@@ -260,7 +254,7 @@ API будет доступен по адресу `http://localhost:8000`
 - API документация: `http://localhost:8000/docs` (Swagger UI)
 - Альтернативная документация: `http://localhost:8000/redoc` (ReDoc)
 
-## 🔐 Процесс аутентификации
+## Процесс аутентификации
 
 1. Пользователь регистрируется с email и паролем
 2. Пароль хешируется с помощью bcrypt
@@ -270,7 +264,7 @@ API будет доступен по адресу `http://localhost:8000`
 6. Middleware валидирует токен при каждом запросе
 7. Пользователь получает доступ к защищенным endpoints в зависимости от его роли
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Аутентификация (Accounts)
 - `POST /register` - Регистрация нового пользователя
@@ -286,7 +280,7 @@ API будет доступен по адресу `http://localhost:8000`
 ### Бизнес-логика
 - Защищенные endpoints для аутентифицированных пользователей с определенными ролями
 
-## 🔑 Основные компоненты
+## Основные компоненты
 
 ### Middleware аутентификации
 Пользовательское middleware, которое валидирует JWT токены при каждом запросе и присоединяет информацию пользователя к контексту запроса.
@@ -303,7 +297,7 @@ API будет доступен по адресу `http://localhost:8000`
 - Middleware запросов для автоматической аутентификации
 - Авторизация на основе ролей и разрешений
 
-## 📝 Пример использования
+## Пример использования
 
 ```python
 # Вход
@@ -316,16 +310,10 @@ curl -X GET "http://localhost:8000/me" \
   -H "Authorization: Bearer <your_token>"
 ```
 
-## 🧪 Тестирование
+## Тестирование
 
 Приложение поставляется с предзагруженными тестовыми данными. Проверьте `app/access/seed.py` для стандартных пользователей и ролей.
 
 ## 📄 Лицензия
 
 Этот проект предоставляется в том виде, в каком он есть, в образовательных и разработочных целях.
-
----
-
-## Описание
-
-Готовая к продакшену система аутентификации и авторизации на FastAPI с поддержкой JWT-аутентификации пользователей, управления доступом на основе ролей с детальными разрешениями, интеграцией PostgreSQL, безопасной работой с паролями через bcrypt и чистым API дизайном с полной документацией endpoints. Идеально подходит для защиты FastAPI приложений с гибким управлением разрешениями.
